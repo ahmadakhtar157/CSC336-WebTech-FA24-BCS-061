@@ -1,0 +1,85 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Store</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="home">
+    <h1>Online Store</h1>
+
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Featured Products -->
+    <section id="products">
+      <h2>Featured Products</h2>
+
+      <article>
+        <h3>Product 1</h3>
+        <p>Price: $10</p>
+        <button class="buy-btn">Buy Now</button>
+      </article>
+
+      <article>
+        <h3>Product 2</h3>
+        <p>Price: $20</p>
+        <button class="buy-btn">Buy Now</button>
+      </article>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories">
+      <h2>Categories</h2>
+
+      <ul>
+        <li>Electronics</li>
+        <li>Clothing</li>
+        <li>Books</li>
+      </ul>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="contact">
+      <h2>Subscribe to Newsletter</h2>
+
+      <form id="newsletter-form">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        >
+        <button onclick="displayMessage()">Subscribe</button>
+      </form>
+
+      <p id="message"></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+    <p>&copy; 2026 Online Store</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
