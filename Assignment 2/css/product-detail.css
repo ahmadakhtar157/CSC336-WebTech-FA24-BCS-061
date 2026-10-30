@@ -1,0 +1,136 @@
+/* ===== Product Page Content ===== */
+
+.page-content {
+  padding: 2rem 1rem 3rem;
+}
+
+/* ===== Breadcrumb ===== */
+
+.breadcrumb ol {
+  display: flex;
+
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+
+  gap: 0.5rem;
+
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* ===== Breadcrumb Separators ===== */
+
+.breadcrumb li::after {
+  content: "/";
+  margin-left: 0.5rem;
+}
+
+/* Remove Separator From Last Item */
+
+.breadcrumb li:last-child::after {
+  content: "";
+}
+
+/* ===== Breadcrumb Links ===== */
+
+.breadcrumb a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: var(--ink);
+}
+
+/* ===== Active Breadcrumb ===== */
+
+.breadcrumb li.active {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+/* ===== Product Detail Layout ===== */
+
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* ===== Product Image ===== */
+
+.product-image img {
+  width: 100%;
+
+  border-radius: 0.75rem;
+  border: 1px solid var(--line);
+
+  background: var(--white);
+}
+
+/* ===== Product Information Heading ===== */
+
+.product-info h1 {
+  font-size: 2rem;
+  margin: 0 0 0.5rem 0;
+}
+
+/* ===== Product Detail Price ===== */
+
+.detail-price {
+  font-size: 1.75rem;
+  font-weight: 700;
+
+  color: var(--accent-dark);
+
+  margin: 0 0 1rem 0;
+}
+
+/* ===== Product Specifications ===== */
+
+.spec-list {
+  padding-left: 1.2rem;
+
+  color: var(--muted);
+
+  margin: 1.5rem 0;
+}
+
+/* ===== Quantity Row ===== */
+
+.qty-row {
+  display: flex;
+  align-items: flex-end;
+
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* ===== Quantity Input Group ===== */
+
+.qty-group {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.25rem;
+}
+
+/* ===== Quantity Label ===== */
+
+.qty-group label {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* ===== Quantity Input ===== */
+
+.qty-group input {
+  width: 5rem;
+  padding: 0.5rem;
+
+  border: 1px solid var(--line);
+  border-radius: 0.375rem;
+
+  font-size: 1rem;
+}

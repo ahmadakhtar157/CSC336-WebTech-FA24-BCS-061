@@ -1,0 +1,39 @@
+/* ===== Reset ===== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ===== Body ===== */
+
+body {
+  margin: 0;
+  font-family: "DM Sans", system-ui, -apple-system, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  line-height: 1.5;
+}
+
+/* ===== Main Content ===== */
+
+main {
+  flex: 1;
+}
+
+/* ===== Container ===== */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
