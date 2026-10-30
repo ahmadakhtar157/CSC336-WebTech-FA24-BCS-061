@@ -1,7 +1,0 @@
-/* ===== Tablet & Desktop ===== */
-
-@media (min-width: 768px) {
-  .product-detail {
-    grid-template-columns: 1fr 1fr;
-  }
-}

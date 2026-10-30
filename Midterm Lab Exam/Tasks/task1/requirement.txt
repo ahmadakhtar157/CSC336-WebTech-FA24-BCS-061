@@ -1,5 +1,0 @@
-Task 1 - CSS-only category filter
-On your product listing page (index.html), add a category filter above the product grid. It must work with no JavaScript.
-•	Give your existing product cards one of K categories (use categories that make sense for your shop). Add K + 1 radio buttons above the grid: "All" plus one per category. "All" is selected when the page loads.
-•	Selecting a category shows only the matching cards (hint: :checked with the ~ sibling selector, or :has()); the hidden cards must not leave empty gaps in the grid.
-•	The selected filter must look selected, using accent colour H.

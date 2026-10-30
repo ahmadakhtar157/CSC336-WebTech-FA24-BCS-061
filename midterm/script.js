@@ -40,7 +40,7 @@ products.forEach(function(product) {
 
 
 // =================================
-// 2. SEARCH AND CATEGORY FILTER
+// 2. SEARCH FILTER
 // =================================
 
 function filterProducts() {

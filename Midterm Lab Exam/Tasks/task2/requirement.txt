@@ -1,5 +1,0 @@
-Task 2 - Product page layout with a sticky details box
-Rework the layout of your product detail page (product.html) using CSS Grid with named grid-template-areas.
-•	Below BP: image, then details (name, price, quantity, Add to Cart), then description, stacked in one column.
-•	From BP and wider: image and details side by side, description full width underneath.
-•	From BP and wider, the details box stays visible (position: sticky) while the page scrolls, (N mod 40) + 70 px from the top of the viewport. Make the description long enough to show this working.
