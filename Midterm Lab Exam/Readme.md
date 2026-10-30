@@ -3,6 +3,12 @@
 **Name:** Ahmad  
 **Reg. No.:** FA24-BCS-061
 
+N = 61
+BP = 661px
+H = 67
+hsl(67, 70, 45)
+k = 4
+
 ## Reference site
 - **Name:** FASTER
 - **URL:** https://pk.hellofaster.com/

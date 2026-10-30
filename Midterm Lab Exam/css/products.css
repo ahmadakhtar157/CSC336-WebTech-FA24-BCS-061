@@ -98,3 +98,80 @@
 
   margin: 0 0 1rem 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Category Filter */
+.category-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0 25px;
+}
+
+.category-filter input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.category-filter label {
+  display: inline-block;
+  padding: 10px 18px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  cursor: pointer;
+  background: var(--white);
+  color: var(--ink);
+}
+
+/* Selected filter */
+.category-filter input:checked + label {
+  background: hsl(67, 70%, 45%);
+  color: white;
+  border-color: hsl(67, 70%, 45%);
+}
+
+/* Keyboard focus */
+.category-filter input:focus-visible + label {
+  outline: 2px solid hsl(67, 70%, 45%);
+  outline-offset: 3px;
+}
+
+
+
+/* Hide products that do not match the selected category */
+.products-section:has(#filter-headphones:checked)
+.product-card:not(.headphones),
+.products-section:has(#filter-watches:checked)
+.product-card:not(.watches),
+.products-section:has(#filter-accessories:checked)
+.product-card:not(.accessories),
+.products-section:has(#filter-power:checked)
+.product-card:not(.power) {
+  display: none !important;
+}
