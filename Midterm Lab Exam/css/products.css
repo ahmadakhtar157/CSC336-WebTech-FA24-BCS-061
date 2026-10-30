@@ -1,0 +1,100 @@
+/* ===== Products Section ===== */
+
+.products-section {
+  padding: 2.5rem;
+}
+
+/* ===== Section Heading ===== */
+
+.products-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Product Grid ===== */
+
+.product-grid {
+  display: grid;
+
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  );
+
+  gap: 1.5rem;
+}
+
+/* ===== Product Card ===== */
+
+.product-card {
+  background: var(--white);
+
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* ===== Product Card Hover ===== */
+
+.product-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 8px 20px rgba(27, 36, 48, 0.1);
+}
+
+/* ===== Product Image ===== */
+
+.product-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+/* ===== Card Details ===== */
+
+.card-details {
+  padding: 1.25rem;
+
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+}
+
+/* ===== Product Name ===== */
+
+.product-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+
+  margin: 0 0 0.25rem 0;
+}
+
+/* ===== Product Name Link ===== */
+
+.product-name a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.product-name a:hover {
+  color: var(--accent);
+}
+
+/* ===== Product Price ===== */
+
+.product-price {
+  font-weight: 700;
+  color: var(--accent-dark);
+
+  margin: 0 0 1rem 0;
+}
